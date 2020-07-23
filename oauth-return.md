@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Authenticating.."
-permalink: /oauth-return
+permalink: /oauth-return/
 ---
 
 ### Please stand by
