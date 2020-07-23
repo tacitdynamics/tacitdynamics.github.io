@@ -10,8 +10,14 @@ jsarr:
 
 Not being redirected back to the app and keep getting stuck on this page?
 
-Make sure you have the latest version of Chrome for Android installed and it is the default browser. If it still doesn't work please try to clear defaults for Chrome app. 
+Make sure you have the latest version of Chrome for Android installed and it is the default browser. 
 
-<div id="myworkaround">Workaround</div>
+From version 3.0.x there is a fallback option, that can be used by copy/pasting below code.
 
-If you have issue copy above code, press back button until you see account screen, press fallback link and enter code.
+<div id="myworkaround">OAuth code is: N/A</div>
+
+<div id="myworkaround-copy"></div>
+
+<br/><br/>
+
+Copy above code to clipboard, press back button until you see account screen in FolderSync, press fallback button and enter code.
