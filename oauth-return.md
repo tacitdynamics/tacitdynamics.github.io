@@ -3,7 +3,7 @@ layout: default
 title: "Authenticating.."
 permalink: /oauth-return/
 jsarr:
-- js/script.js
+- js/scripts.js
 ---
 
 ### Please stand by
