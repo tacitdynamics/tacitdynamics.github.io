@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Authenticating.."
 permalink: /oauth-return
 ---
