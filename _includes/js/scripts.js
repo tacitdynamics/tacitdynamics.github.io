@@ -13,5 +13,5 @@ function copyToClipboard(copyText) {
 
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('code');
-document.getElementById("myworkaround").innerHTML = "OAuth code is: <b>" + myParam + "<b/><b/>";
+document.getElementById("myworkaround").innerHTML = "OAuth code is: <b>" + myParam + "<br/><br/>";
 document.getElementById("myworkaround-copy").innerHTML = "<button onclick=\"copyToClipboard(\"" + myParam + "\")\">Copy code to clipboard</button>";
