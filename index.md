@@ -12,4 +12,4 @@ Tacit Dynamics focuses on developing applications for the Android platform. We h
 
 [Contact us](/contact) for further inquiries.
 
-{{< figure src="/img/android_app_on_play_logo_large.png" width="30%" link="https://play.google.com/store/apps/developer?id=Tacit%20Dynamics" >}}
+<a href="https://play.google.com/store/apps/developer?id=Tacit%20Dynamics"><img src="assets/img/android_app_on_play_logo_large.png" alt="drawing" style="width:200px;"/></a>
