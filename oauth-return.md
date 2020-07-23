@@ -18,4 +18,5 @@ From version 3.0.x there is a fallback option, that can be used by copy/pasting 
 
 <div id="myworkaround-copy"></div>
 
+
 Copy above code to clipboard, press back button until you see account screen in FolderSync, press fallback button and enter code.
