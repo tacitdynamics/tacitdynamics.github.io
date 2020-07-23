@@ -12,10 +12,10 @@ function copyToClipboard(copyText) {
   
     /* Alert the copied text */
     alert("Copied the code: " + copyText);
-}
+    }   
 
 
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('code');
 document.getElementById("myworkaround").innerHTML = "OAuth code is: <b>" + myParam + "</b><br/><br/>";
-document.getElementById("myworkaround-copy").innerHTML = "<button onclick=\"copyToClipboard(\"" + myParam + "\")\">Copy code to clipboard</button><br/><br/>";
+document.getElementById("myworkaround-copy").innerHTML = "<button onclick='copyToClipboard(" + myParam + ")'>Copy code to clipboard</button><br/><br/>";
