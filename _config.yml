@@ -3,10 +3,13 @@ description: Developer of FolderSync for Android
 theme: jekyll-theme-architect
 
 defaults:
-    - scope:
-        path: "assets/img"
-      values:
-        image: true
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 plugins:
-    - jekyll-seo-tag
+  - jekyll-seo-tag
+
+include:
+  - .well-known 

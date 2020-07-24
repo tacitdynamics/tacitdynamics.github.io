@@ -1,0 +1,50 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "dk.tacit.android.foldersync.developer",
+            "sha256_cert_fingerprints": [
+                "60:E0:03:D5:9F:76:B7:50:49:32:1A:70:CA:87:E5:D8:53:98:EA:82:5E:1D:40:43:2D:62:ED:54:D3:FD:CF:B8"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "dk.tacit.android.foldersync.full",
+            "sha256_cert_fingerprints": [
+                "1A:79:42:B0:C5:B3:BC:97:9B:E0:A9:90:3D:DC:7C:2C:97:72:FB:A1:CB:3E:C8:1A:21:38:4F:C7:90:68:F0:65"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "dk.tacit.android.foldersync.lite",
+            "sha256_cert_fingerprints": [
+                "2D:20:10:1D:3A:40:63:16:AB:43:31:F7:5E:12:92:E6:1B:79:81:DC:36:E8:08:4B:2D:25:97:EC:40:7C:3E:05"
+            ]
+        }
+    },
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "dk.tacit.android.foldersync.app",
+            "sha256_cert_fingerprints": [
+                "12:48:B7:E0:AC:2A:64:53:51:81:8B:97:5F:BC:7B:BD:F0:4A:F1:53:84:8F:7F:13:13:03:62:8F:8D:56:18:6D"
+            ]
+        }
+    }
+]
