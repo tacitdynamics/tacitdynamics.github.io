@@ -13,7 +13,7 @@ It currently support multiple Google Drive, Dropbox, Amazon S3, SugarSync, Box, 
 
 <a href="https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.full"><img src="../assets/img/android_app_on_play_logo_large.png" alt="drawing" style="width:200px;"/></a>
 
-</br>
+
 You can also buy FolderSync Pro directly if you do not have access to Google Play or need licenses for mass deployment in business settings.
 
 Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant of Record for all our orders. Paddle provides all customer service inquiries and handles returns.
@@ -29,7 +29,7 @@ FolderSync Pro - 100 licenses  |  €499.95 | <a href="#!" class="paddle_button"
 
 
 ### Changelog
-Latest version: 3.0.5
+Latest version: 3.0.6
 
 See the [changelog](/foldersync/changelog) for further details.
 
