@@ -8,7 +8,7 @@ permalink: /foldersync/help
 
 Revision 3.0.0
 
-# General info
+## General info
 
 FolderSync is as the name suggest a folder syncing application. It is not a backup application, although it can be used as such. Its primary purpose is to sync folders between your devices and remote cloud provider or server.
 
