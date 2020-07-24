@@ -6,6 +6,12 @@ permalink: /foldersync/changelog
 
 ## FolderSync Changelog
 
+### Version 3.0.6 (24-07-2020)
+* Fallback for OAuth login.
+* Fix folder deletion.
+* Fix backup folder creation bug.
+* Show selected count.
+
 ### Version 3.0.5 (17-07-2020)
 * Reordering of FolderPairs.
 * Fix RTL display.
