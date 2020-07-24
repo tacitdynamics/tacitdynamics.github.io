@@ -1,0 +1,24 @@
+toc:
+  - title: Menu
+    subfolderitems:
+      - page: Contact
+        url: /contact
+      - page: Support
+        url: /support  
+      - page: Privacy Policy
+        url: /privacypolicy
+      - page: FolderSync
+        url: /foldersync
+        subsubfolderitems:
+          - page: Info
+            url: /foldersync
+          - page: Help
+            url: /foldersync/help
+          - page: FAQ
+            url: /foldersync/faq
+          - page: Changelog
+            url: /foldersync/changelog
+          - page: Translations
+            url: /foldersync/translations
+          - page: EULA
+            url: /foldersync/eula
