@@ -2,6 +2,7 @@ title: Tacit Dynamics
 description: Developer of FolderSync for Android
 theme: jekyll-theme-architect
 url: https://www.tacit.dk
+google_analytics: UA-9554483-1
 
 defaults:
   - scope:
