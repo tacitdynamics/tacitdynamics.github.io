@@ -12,6 +12,8 @@ toc:
         subsubfolderitems:
           - page: Info
             url: /foldersync
+          - page: Buy
+            url: /foldersync/purchase
           - page: Help
             url: /foldersync/help
           - page: FAQ

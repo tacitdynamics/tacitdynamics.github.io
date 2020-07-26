@@ -6,6 +6,9 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.7 (26-07-2020)
+* Fix sporadic Dropbox/Google Drive upload issue.
+
 ### Version 3.0.6 (24-07-2020)
 * Fallback for OAuth login.
 * Fix folder deletion.
