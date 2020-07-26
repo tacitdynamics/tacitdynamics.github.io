@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "FolderSync EULA"
-permalink: /foldersync/eula
+permalink: /foldersync/eula/
 ---
 
 ## EULA

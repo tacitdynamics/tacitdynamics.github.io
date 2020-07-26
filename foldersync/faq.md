@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "FolderSync FAQ"
-permalink: /foldersync/faq
+permalink: /foldersync/faq/
 ---
 
 ## Google Play

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "FolderSync Changelog"
-permalink: /foldersync/changelog
+permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog

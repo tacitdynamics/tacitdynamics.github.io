@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "FolderSync Help"
-permalink: /foldersync/help
+permalink: /foldersync/help/
 ---
 
 # Help

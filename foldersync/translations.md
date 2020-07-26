@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "FolderSync Tranlations"
-permalink: /foldersync/translations
+permalink: /foldersync/translations/
 ---
 
 ## Translations
