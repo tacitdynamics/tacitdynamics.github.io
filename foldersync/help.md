@@ -8,7 +8,7 @@ permalink: /foldersync/help/
 
 Revision 3.0.0
 
-## General info
+# General info
 
 FolderSync is as the name suggest a folder syncing application. It is not a backup application, although it can be used as such. Its primary purpose is to sync folders between your devices and remote cloud provider or server.
 
@@ -88,7 +88,7 @@ You can now configure your folderPair:
 * **Use MD5 checksums:** Check this setting if MD5 checksum should be calculated for files. May decrease sync speed and use extra battery, but can also result in less download and upload traffic. Enabled by default.
 * **Use temp-file scheme:** Check this setting, if you want to use temp-file scheme. Temp-file scheme means files are transferred using temporary name, and upon completion of transfer is renamed to the final filename. This may break the functionality of some cloud providers (proper revisions etc.). Enabled by default.
 * **Disable file-size check:** Check this if transferred files should not be validated against source by comparing file-size. Some providers adds bytes to certain files when uploaded, so this setting can help in those cases. 
-* **Copy files to time-stamped folder:** With the corresponding naming pattern field this can be used to use FolderSync for backing up files. Each sync will backup all files to a new subfolder in the target folder named accordingly to the naming-pattern configured. This can thus only be used with one-way sync type. See this [link](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) for details on how to use a custom naming pattern.
+* **Copy files to time-stamped folder:** With the corresponding naming pattern field this can be used to use FolderSync for backing up files. Each sync will backup all files to a new subfolder in the target folder named accordingly to the naming-pattern configured. This can thus only be used with one-way sync type. See this [link](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) for details on how to use a custom naming pattern. Note that FolderSync doesn't support free text in the format string, only pattern letters except for time zone and era, which are not supported.
 
 ### Sync options - Connection
 * **Use WiFi:** Check this setting, if this Folderpair is allowed to sync on WiFi.
@@ -150,7 +150,7 @@ The settings panel allow you to backup/restore the underlying database. The back
 You also have the option to disable scheduled syncs completely. If you do this, no scheduled syncs will run. Only disable this, if you use manual sync only or syncs initiated from Tasker or Locale. 
 
 ## Tasker
-FolderSync works as Tasker plugin. This means one or more folderpair syncs can be initiated when a condition or rule you configured in Tasker occurs. Configuring Tasker is out of the scope of this help text, but FolderSync is found in the the Plugin section. Note that syncs will run no matter what settings they are configured with, when initiated from Tasker, except if the allowed connection requirement(s) are not met.
+FolderSync works as Tasker plugin. This means one or more folderpair syncs can be initiated or cancelled when a condition or rule you configured in Tasker occurs. Configuring Tasker is out of the scope of this help text, but FolderSync is found in the the Plugin section. Note that syncs will run no matter what settings they are configured with, when initiated from Tasker, except if the allowed connection requirement(s) are not met.
 
 FolderSync also supports triggering actions via deeplinks. To trigger a deeplink from Tasker use "Browse URL" action.
 

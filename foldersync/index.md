@@ -14,7 +14,7 @@ FolderSync requires Android 6.0 or newer to run.
 You can find info on purchasing FolderSync Pro [here](/foldersync/purchase).
     
 ### Changelog
-Latest version: 3.0.7
+Latest version: 3.0.8
 
 See the [changelog](/foldersync/changelog) for further details.
 

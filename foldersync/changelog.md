@@ -6,6 +6,12 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.8 (29-07-2020)
+* Fix symlink issue.
+* Fix empty folder issue with AmazonS3.
+* Fix upload issue for Google Drive if file exists.
+* Tasker plugin options to toggle scheduling syncing.
+
 ### Version 3.0.7 (26-07-2020)
 * Fix sporadic Dropbox/Google Drive upload issue.
 
