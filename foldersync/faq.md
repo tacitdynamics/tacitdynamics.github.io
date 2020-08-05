@@ -4,6 +4,9 @@ title: "FolderSync FAQ"
 permalink: /foldersync/faq/
 ---
 
+* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+{:toc}
+
 ## Google Play
 ### Do I need to buy Premium/Pro version again on a new device?
 No, the premium upgrade or pro purchase is tied to your Google account. Just use the same account on Google Play on the new device, and your previous purchase will be recognized. Buying Premium -in-app purchase in FolderSync doesn't give access to FolderSync Pro but unlocks it to be identical.

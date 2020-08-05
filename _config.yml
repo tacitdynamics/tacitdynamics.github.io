@@ -3,6 +3,13 @@ description: Developer of FolderSync for Android
 theme: jekyll-theme-architect
 url: https://www.tacit.dk
 google_analytics: UA-9554483-1
+markdown: kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
 
 defaults:
   - scope:

@@ -5,8 +5,12 @@ permalink: /foldersync/help/
 ---
 
 # Help
+{:.no_toc}
 
 Revision 3.0.0
+
+* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+{:toc}
 
 # General info
 
