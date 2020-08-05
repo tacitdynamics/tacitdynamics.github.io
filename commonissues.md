@@ -33,6 +33,7 @@ permalink: /commonissues
 ### WebDAV issues
 
 * **2FA access for NextCloud:** If you have 2FA enabled on Nextcloud and want to use FolderSync, see this article: https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2
+[https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2](https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2)
 
 * **Non-https server connection:** Cleartext http communication is disabled in latest releases of apps. Because of security concerns, it will not be re-enabled. FolderSync supports self-signed certificates so with minimum hassle you can enable SSL support on your home server.
 
@@ -49,4 +50,4 @@ permalink: /commonissues
 
 * **Bad request errors or failing folderpairs:** Please try to re-authenticate account. In some cases you also need to re-select to remote folder for folderpairs, since the path structure on the remote end has changed because of usages of new API versions. Just re-select the folder you are already using, so the remote folder info can be refreshed.
 
-* **HTTPS connection errors:** This can happen on newer Android devices, since deprecated encryption ciphers are no longer enabled by default with OkHttp/Android to increase security. This means, if you are connecting to an insecure web server using WebDAV or ownCloud, the connection may fail. You can either upgrade your server or try to enable self-signed certificates for you WebDAV/ownCloud account. See here which protocols/ciphers are supported on which Android versions: https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm
+* **HTTPS connection errors:** This can happen on newer Android devices, since deprecated encryption ciphers are no longer enabled by default with OkHttp/Android to increase security. This means, if you are connecting to an insecure web server using WebDAV or ownCloud, the connection may fail. You can either upgrade your server or try to enable self-signed certificates for you WebDAV/ownCloud account. See here which protocols/ciphers are supported on which Android versions: [https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm](https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm)

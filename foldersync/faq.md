@@ -11,7 +11,7 @@ No, the premium upgrade or pro purchase is tied to your Google account. Just use
 ### How do I get a refund?
 We can offer refund up to 72 hours after purchase or if your premium upgrade is not recognized and you want to cancel it or buy the pro version instead. We can also offer refund if you want to transfer license to new Google account, but some old purchases may for various reasons not be refundable in the Google Play console so we cannot guarantee this.
 
-Please see this link for further details: https://goo.gl/forms/e21sKHBkVXaqBnE92
+Please see this link for further details: [https://goo.gl/forms/e21sKHBkVXaqBnE92](https://goo.gl/forms/e21sKHBkVXaqBnE92)
 
 ### Why can I not get Pro version when I have purchased premium upgrade?
 The premium upgrade in the free version of FolderSync unlocks it to be identical to FolderSync Pro, but it doesn't enable download of pro version as its a different app on Google Play and the Pro version can only be downloaded if bought directly. If you have issues getting your premium purchase recognoized and want to cancel buy pro version instead, please request a refund.
@@ -32,7 +32,7 @@ If you think you have accidentally purchased the app twice, then please check th
 
 ### Will your apps be available on the Amazon Appstore for Android?
 The paid app has been submitted to the Amazon app store, and can be found here:
-http://www.amazon.com/s?_encoding=UTF8&field-brandtextbin=Tacit%20Dynamics&node=2350149011 .
+[http://www.amazon.com/s?_encoding=UTF8&field-brandtextbin=Tacit%20Dynamics&node=2350149011 ](http://www.amazon.com/s?_encoding=UTF8&field-brandtextbin=Tacit%20Dynamics&node=2350149011).
 
 ### How do I migrate settings from free to pro version?
 Create a database backup in the free version in the settings menu. Then fire up the pro version and restore database to import settings - this will overwrite existing settings so beware. That's its. This might not work on a few devices, but currently there is no solution for this.
@@ -54,7 +54,7 @@ Transfer speeds have been compared to other popular file managers and they are c
 
 ### Why can't FolderSync be moved to the SD card?
 Unfortunately this feature will not be enabled, since it can cause scheduled syncs not to work and then a lot of users will probably complain. :-) However, if you have a rooted phone you can use this tool to move any app to SD:
-https://market.android.com/details?id=com.leinardi.setinstalllocation 
+[https://market.android.com/details?id=com.leinardi.setinstalllocation](https://market.android.com/details?id=com.leinardi.setinstalllocation)
 
 Just as long as you know that doing so may cause scheduled syncs not to work correctly.
 

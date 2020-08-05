@@ -111,15 +111,25 @@ You can now configure your folderPair:
 ### Sync filters
 You can add filters where your can configure to include or exclude files and folders based on file type, name, size, file age and modification date. Regular expression filtering is also supported if that is something you are into. Sync filters are specific to the folderpair for which you configure them.
 
-All filters are case-sensitive. 
+Some notes:
 
-For file type filters you should enter the file type of the file, for example "jpg" or "doc". Don't include leading period.
+* All filters are case-sensitive. 
+* File extension filters can be for example "jpg" or "doc". Don't include leading period.
+* If filter value for the folder filters "contains", "equals", "startsWith" and "endsWith" contains a forward slash "/" then the filter is applied to the device path of the folder else only the folder name.
+* Regex filters are only applied to filename or foldername, not the full path. See more info for [regex](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
+* All folders in the tree will be matched against folder filters, so if a folder matches an include filter the files in the folder will be synced, but its subfolders are not synced unless they also matches an include filter.
 
-All folders will be matched against folder filters - that means if you want to exclude or include a specific folder with name matching "xyz" then all folders in the tree under the root folder configured for the folderpair will be filtered, if it has the name "xyz". 
+**Examples**
 
-To exclude or include only a specific "xyz" folder you have to include a forward slash ("/") in the name you specify. Then you can exclude a folder and all its sub folders with a folder filter of type "startswith" with value  "/mnt/sdcard/rootfolder/xyz". When using full path in a filter please only use the "startswith" type filter.
+**Include or exclude a folder xyz in rootfolder and all its sub folders**<br/>
+Use folder filter of type "startswith" with value "/mnt/sdcard/rootfolder/xyz". 
 
-Regex filters only operate of filename or foldername, not the full path.
+**Include a folder xyz in rootfolder and all its files, but not its subfolders**<br/>
+Use folder filter of type "equals" with value "/mnt/sdcard/rootfolder/xyz". 
+
+**Include any folder named xyz and all files in those folders, but not their subfolders**<br/>
+Use folder filter of type "equals" with value "xyz". 
+
 
 ## Syncing
 Syncing occurs according to the schedule you have defined for each folderpair. If a schedule is not defined the folderpair will only be synced if you manually initiate it or if initiated by apps like Tasker. If no network connection is set to be allowed for a folderpair it will never sync, not even if you manually initiate it. This is to ensure you are not accidentally charged for expensive network traffic. Files are compared using their last modification date and optionally using MD5 hashes (for local files and remote providers that offers this information).
