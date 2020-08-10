@@ -78,7 +78,7 @@ You can now configure your folderPair:
 ### Sync options
 * **Sync sub-folders:** Check this if sub-folders are to be synced. Enabled by default.
 * **Sync hidden files:** Check this if hidden files are to be synced. Enabled by default.
-* **Sync deletions:** Check this if deletions are to be mirrored. Use with care! Disabled by default. 
+* **Sync deletions:** Check this if deletions are to be synced. Use with care! Disabled by default. 
 
 ### Sync options - Advanced
 * **Overwrite old files:** Choose what to do if a file already exist at target. Default setting is to overwrite the old file, so the newest file is used.
@@ -144,8 +144,8 @@ Two-way sync copies files in both directions, overwriting older files if duplica
 ### Instant sync
 This feature is experimental and can be enabled for a folderpair that syncs local files. When enabled, local file changes will be detected in the device folder, and a immediate partial sync will be attempted. It is recommended that a scheduled sync is still configured, as some change events are not detected properly - fx. on some custom ROMs etc. Newer version of Android may not support this feature on external SD cards.
 
-### Mirroring of deletions
-If the "Sync deletions" option is enabled, deletions will also be synced, for all types of sync. FolderSync has an internal database of synced files. If a previously synced filed is deleted at either end, the deletion will also happen at the opposite end (if the file at the opposite end has not changed since last sync). Use this option only if you are sure what you are doing, and at your own risk!
+### Sync of deletions
+If the "Sync deletions" option is enabled, deletions will also be synced, for all types of sync. FolderSync has an internal database of synced files. If a previously synced file is deleted at either end, the deletion will also happen at the opposite end (if the file at the opposite end has not changed since last sync). One-way sync will only delete files at target, while two-way sync will delete both local and remote files if needed. Use this option only if you are sure what you are doing, and at your own risk!
 
 ## Sync status
 The sync status on the dashboard provides you with the opportunity to see whats going on when syncing, and to view a history of past syncs that have occurred. It also informs you when the next sync check will run. 
