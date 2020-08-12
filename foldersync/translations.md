@@ -8,7 +8,7 @@ permalink: /foldersync/translations/
 
 FolderSync has been translated to several languages thanks to many of its users. 
 
-See translation status here: [http://translate.tacit.dk/](http://translate.tacit.dk/) 
+See translation status here: [https://translate.tacit.dk/](https://translate.tacit.dk/) 
 
 ### Thank you
 
