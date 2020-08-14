@@ -117,7 +117,7 @@ You can add filters where your can configure to include or exclude files and fol
 
 Some notes:
 
-* All filters are case-sensitive. 
+* All filters case-insensitive. 
 * File extension filters can be for example "jpg" or "doc". Don't include leading period.
 * If filter value for the folder filters "contains", "equals", "startsWith" and "endsWith" contains a forward slash "/" then the filter is applied to the device path of the folder else only the folder name.
 * Regex filters are only applied to filename or foldername, not the full path. See more info for [regex](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
@@ -145,7 +145,7 @@ Two-way sync copies files in both directions, overwriting older files if duplica
 This feature is experimental and can be enabled for a folderpair that syncs local files. When enabled, local file changes will be detected in the device folder, and a immediate partial sync will be attempted. It is recommended that a scheduled sync is still configured, as some change events are not detected properly - fx. on some custom ROMs etc. Newer version of Android may not support this feature on external SD cards.
 
 ### Sync of deletions
-If the "Sync deletions" option is enabled, deletions will also be synced, for all types of sync. FolderSync has an internal database of synced files. If a previously synced file is deleted at either end, the deletion will also happen at the opposite end (if the file at the opposite end has not changed since last sync). One-way sync will only delete files at target, while two-way sync will delete both local and remote files if needed. Use this option only if you are sure what you are doing, and at your own risk!
+If the "Sync deletions" option is enabled deletions will also be synced for all types of sync. FolderSync has an internal database of synced files. If a previously synced file is deleted at either end, the deletion will also happen at the opposite end (if the file at the opposite end has not changed or been added since last sync). One-way sync will only delete files at target, while two-way sync will delete both local and remote files if needed. Use this option only if you are sure what you are doing, and at your own risk!
 
 ## Sync status
 The sync status on the dashboard provides you with the opportunity to see whats going on when syncing, and to view a history of past syncs that have occurred. It also informs you when the next sync check will run. 

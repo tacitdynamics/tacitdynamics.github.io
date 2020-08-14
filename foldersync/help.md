@@ -117,7 +117,7 @@ You can add filters where your can configure to include or exclude files and fol
 
 Some notes:
 
-* All filters are case-sensitive. 
+* All filters are case-insensitive. 
 * File extension filters can be for example "jpg" or "doc". Don't include leading period.
 * If filter value for the folder filters "contains", "equals", "startsWith" and "endsWith" contains a forward slash "/" then the filter is applied to the device path of the folder else only the folder name.
 * Regex filters are only applied to filename or foldername, not the full path. See more info for [regex](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
