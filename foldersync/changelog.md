@@ -6,6 +6,14 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.9 (15-08-2020)
+* Google Shared drive support (experimental). 
+* Fix folder filters.
+* More info on history list.
+* Trigger backup from Tasker.
+* Make opened file in file manager editablel.
+* Remove setting permission for SFTP uploaded files.
+
 ### Version 3.0.8 (29-07-2020)
 * Fix symlink issue.
 * Fix empty folder issue with AmazonS3.
