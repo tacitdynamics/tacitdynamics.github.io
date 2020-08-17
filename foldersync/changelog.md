@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.10 (18-08-2020)
+* Fix file size/modified time filters. 
+* Fix upload to Synology using SMB2.
+
 ### Version 3.0.9 (15-08-2020)
 * Google Shared drive support (experimental). 
 * Fix folder filters.
