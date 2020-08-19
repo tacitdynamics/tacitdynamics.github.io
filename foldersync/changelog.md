@@ -6,6 +6,9 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.11 (19-08-2020)
+* Fix scheduling of sync on some devices.
+
 ### Version 3.0.10 (18-08-2020)
 * Fix file size/modified time filters. 
 * Fix upload to Synology using SMB2.
