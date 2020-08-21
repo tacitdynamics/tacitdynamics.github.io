@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.12 (21-08-2020)
+* Fix filters.
+* Fix sharing multiple files to FolderSync.
+
 ### Version 3.0.11 (19-08-2020)
 * Fix scheduling of sync on some devices.
 
