@@ -17,9 +17,9 @@ You can buy FolderSync Pro below as well. For large volume quote, special needs 
 **Personal license**
  <br/>€9.95 (1 license) <a href="#!" class="paddle_button" data-product="529456">Buy</a> 
 
-**Business**
+**Business license**
 <br/>€14.95 (1 license) <a href="#!" class="paddle_button" data-product="529458">Buy</a>
-<br/>€119.95 (10 licenses) <a href="#!" class="paddle_button" data-product="529459">Buy</a>
+<br/><br/>€119.95 (10 licenses) <a href="#!" class="paddle_button" data-product="529459">Buy</a>
 
 By buying FolderSync you are subject to your [End user license agreement](/foldersync/eula).
 
