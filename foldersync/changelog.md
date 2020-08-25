@@ -6,6 +6,9 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.14 (25-08-2020)
+* Fix Root
+
 ### Version 3.0.13 (23-08-2020)
 * Fix Box nested folder issue. 
 * Fix sporadic Dropbox upload issue.
