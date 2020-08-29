@@ -30,7 +30,7 @@ For this example we will add our Google Drive account, so FolderSync can access 
 
 Depending on the account type, this process may be different. Some cloud providers does not support OAuth authentication. For those provider types where FolderSync need to store credentials, they are stored in encrypted form.
 
-If you want to use SMB, FTP, SFTP or WebDAV, you have to set it up on a NAS, server or your home PC, or have access to an existing account. Explaining how to setup this is not in the scope of this help text. Use Google. :-)
+If you want to use SMB, FTP, SFTP or WebDAV (HTTPS only), you have to set it up on a NAS, server or your home PC, or have access to an existing account. Explaining how to setup this is not in the scope of this help text. Use Google. :-)
 
 Lets continue configuring our Google Drive account. 
 
@@ -42,6 +42,12 @@ Account    | Add account
 
 
 When not using OAuth, FolderSync provides an option to test your entered account settings using a [Test] button, to see if it can connect to the selected provider with the server address and credentials you have entered.
+
+See examples below:
+
+WebDAV | FTP | SMB2
+--------|------|------
+![Test](/assets/img/3.0.0/foldersync_webdav.png)  | ![Test](/assets/img/3.0.0/foldersync_ftp.png) | ![Test](/assets/img/3.0.0/foldersync_smb2.png)
 
 ## Create a folderpair
 From the dashboard you can create a folderPair. A folderPair is a definition of a sync that you want FolderSync to perform. It defines a sync between a local folder on your device and a remote folder for your chosen provider type. A sync can sync files to remote cloud storage, to your local storage or both ways. 

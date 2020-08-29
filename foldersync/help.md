@@ -43,6 +43,12 @@ Account    | Add account
 
 When not using OAuth, FolderSync provides an option to test your entered account settings using a [Test] button, to see if it can connect to the selected provider with the server address and credentials you have entered.
 
+See examples below:
+
+WebDAV | FTP | SMB2
+--------|------|------
+![Test](/assets/img/3.0.0/foldersync_webdav.png)  | ![Test](/assets/img/3.0.0/foldersync_ftp.png) | ![Test](/assets/img/3.0.0/foldersync_smb2.png)
+
 ## Create a folderpair
 From the dashboard you can create a folderPair. A folderPair is a definition of a sync that you want FolderSync to perform. It defines a sync between a local folder on your device and a remote folder for your chosen provider type. A sync can sync files to remote cloud storage, to your local storage or both ways. 
 
