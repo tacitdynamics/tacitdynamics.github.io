@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.15 (01-09-2020)
+* Fix Hubic listing issue. 
+* Removed client side encryption support for AmazonS3.
+
 ### Version 3.0.14 (25-08-2020)
 * Fix Root
 
