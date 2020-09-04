@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.16 (03-09-2020)
+* Fixed notification text. 
+* Fix overwrite files when sharing to FolderSync.
+
 ### Version 3.0.15 (01-09-2020)
 * Fix Hubic listing issue. 
 * Removed client side encryption support for AmazonS3.
