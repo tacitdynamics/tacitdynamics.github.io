@@ -6,6 +6,11 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.17 (18-09-2020)
+* Fix not always deleting files if using filters. 
+* Fixed issue with FTP when using special characters.
+* Sorting by filetype. 
+
 ### Version 3.0.16 (03-09-2020)
 * Fixed notification text. 
 * Fix overwrite files when sharing to FolderSync.

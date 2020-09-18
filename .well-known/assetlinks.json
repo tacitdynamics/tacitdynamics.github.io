@@ -19,7 +19,9 @@
             "namespace": "android_app",
             "package_name": "dk.tacit.android.foldersync.full",
             "sha256_cert_fingerprints": [
-                "1A:79:42:B0:C5:B3:BC:97:9B:E0:A9:90:3D:DC:7C:2C:97:72:FB:A1:CB:3E:C8:1A:21:38:4F:C7:90:68:F0:65"
+                "1A:79:42:B0:C5:B3:BC:97:9B:E0:A9:90:3D:DC:7C:2C:97:72:FB:A1:CB:3E:C8:1A:21:38:4F:C7:90:68:F0:65",
+                "C1:AD:73:CA:1A:AD:87:31:2F:D4:35:3B:98:FC:4D:2B:6F:BB:60:D1:EA:06:37:42:9C:B3:B2:56:E4:AE:B4:F1",
+                "F0:F2:A4:F0:1E:57:99:CF:AA:46:1F:23:32:E1:8D:D5:AF:B7:C0:43:E5:26:43:9B:89:86:34:D3:8B:C7:31:1A"
             ]
         }
     },
