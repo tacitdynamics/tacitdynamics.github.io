@@ -12,7 +12,7 @@ permalink: /foldersync/faq/
 Most common issue is that the Android OS is battery optimizing the FolderSync process so it cant run scheduled sync. To ensure sync can occur in background, disable any battery optimization for FolderSync in Android settings.
 
 ### WiFi SSID not detected
-Scheduled sync can be broken if Wifi SSID is not detected on Android 10 and you configured SSID filter on folderPair connection settings - if you need FolderSync to detect SSID, please allow it background access to location. If you already gave permission to only allow while app is in use, you have to go to Android app settings for FolderSync and give location permission again for background use.
+Scheduled sync can be broken if Wifi SSID is not detected and you configured a SSID filter on folderPair connection settings - if you need FolderSync to detect SSID, please allow it background access to location on newer versions of Android. If you already gave permission to only allow while app is in use, you have to go to Android app settings for FolderSync and give location permission again for background use. If you don't wan't to do that, remove SSID filter configuration on folderpair.
 
 ### Wifi doesn't turn on
 Unfortunately Android no longer allows turning on WiFi for apps targeting Android 10.
@@ -45,8 +45,10 @@ FolderSync doesn't support this, so if using a server like FileZilla you have to
 If you have 2FA enabled on Nextcloud and want to use FolderSync, see this article: https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2
 [https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2](https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2)
 
-### Non-https server connection
-Cleartext http communication is disabled in latest releases of apps. Because of security concerns, it will not be re-enabled. FolderSync supports self-signed certificates so with minimum hassle you can enable SSL support on your home server.
+### I can not connect to a non-HTTPS WebDav server. Why?
+Because of security restrictions when targeting newer Android SDK's non-SSL http communication is no longer allowed by default and will not be readded, as it would be a security risk for all users of the app, since it can enable man-in-the-middle attacks on compromised networks. This can not be configured as a user setting because of the way it configured in the app.
+
+It is recommended you enable SSL on your server or NAS, using the default self-signed SSL certificate it most likely has configured. FolderSync support self-signed certificates which can be enabled on account. If you absolutely have no other choice but to use a non-SSL server, please contact support to request the 2.9.x version FolderSync. Note, this old version is unsupported and will never receive updates.
 
 ### Upload fails with java.io.IOException: Stream Closed or similar:
 Some servers has a very low request time out setting. If you are using Apache webserver, many NAS like Synology or MyCloud are, you can remove usage of LoadModule reqtimeout_module modules/mod_reqtimeout.so in apache conf file.
@@ -75,7 +77,7 @@ Amazon has without warning closed access for 3rd party apps, so this integration
 
 ## Google Play
 ### Do I need to buy Premium/Pro version again on a new device?
-No, the premium upgrade or pro purchase is tied to your Google account. Just use the same account on Google Play on the new device, and your previous purchase will be recognized. Buying Premium -in-app purchase in FolderSync doesn't give access to FolderSync Pro but unlocks it to be identical.
+No, the premium upgrade or pro purchase is tied to your Google account. Just use the same account on Google Play on the new device, and your previous purchase will be recognized. Buying Premium in-app purchase in FolderSync doesn't give access to FolderSync Pro but unlocks the free version to be identical to the pro version in every way.
 
 ### How do I get a refund?
 We can offer refund up to 72 hours after purchase or if your premium upgrade is not recognized and you want to cancel it or buy the pro version instead. We can also offer refund if you want to transfer license to new Google account, but some old purchases may for various reasons not be refundable in the Google Play console so we cannot guarantee this.
@@ -225,3 +227,5 @@ http://tasker.dinglisch.net/faq.html
 
 ### HTTPS connection errors
 This can happen on newer Android devices, since deprecated encryption ciphers are no longer enabled by default with OkHttp/Android to increase security. This means, if you are connecting to an insecure web server using WebDAV or ownCloud, the connection may fail. You can either upgrade your server or try to enable self-signed certificates for you WebDAV/ownCloud account. See here which protocols/ciphers are supported on which Android versions: [https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm](https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm)
+
+
