@@ -7,7 +7,7 @@ permalink: /support
 ## Support
 
 ### Common issues
-Please check the [common issues](/commonissues) list or the [FolderSync FAQ](/foldersync/faq) before contacting support.
+Please check the [FolderSync FAQ](/foldersync/faq) before contacting support.
 
 ### Generel help
 Consult the [help](/foldersync/help/) page for further info on how to use FolderSync.

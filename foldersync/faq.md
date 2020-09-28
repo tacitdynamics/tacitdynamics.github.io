@@ -7,6 +7,72 @@ permalink: /foldersync/faq/
 * A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
 {:toc}
 
+## Scheduled sync not starting
+### Battery optimization
+Most common issue is that the Android OS is battery optimizing the FolderSync process so it cant run scheduled sync. To ensure sync can occur in background, disable any battery optimization for FolderSync in Android settings.
+
+### WiFi SSID not detected
+Scheduled sync can be broken if Wifi SSID is not detected on Android 10 and you configured SSID filter on folderPair connection settings - if you need FolderSync to detect SSID, please allow it background access to location. If you already gave permission to only allow while app is in use, you have to go to Android app settings for FolderSync and give location permission again for background use.
+
+### Wifi doesn't turn on
+Unfortunately Android no longer allows turning on WiFi for apps targeting Android 10.
+
+### Instant sync issues
+On Android 6.x/7.x instant sync functionality will not work for most devices for external SD card. This is an Android bug or perhaps a new undocumented limitation by Google. Nothing we can do about it unfortunately.
+
+## Google Drive issues
+### Exisisting account not working:
+Please try to re-authenticate account or if that fails re-add Google Drive account and update FolderPairs to use newly added account. Some old API keys used by FolderSync can no longer be used, so adding a new account can unfortunately be required.
+
+### Browser authentication issue
+If you have issues authenticating, please ensure Chrome browser is installed and it is the default browser. If issue persist try clearing data for Chrome browser in Android App settings. Firefox has also been reported by some users to work. Simple browsers on app store that use an internal standard WebView with not be able to work with the security measures Google is enforcing.
+
+### Syncing to a shared folder
+If you want to sync to a folder somebody has shared with you, you need to add it it your drive. This can be done in the Google Drive browser interface. 
+
+    1. Open the "Shared with me" section. 
+    2. Click a folder or files to be added to another location. (it will be highlighted) 
+    3. Press down "Shift + Z" 
+    4. Choose a location in a dialog box.
+
+## FTP issues
+### TLS session resumption for FTP
+FolderSync doesn't support this, so if using a server like FileZilla you have to disable it in server settings to use Foldersync.
+
+## WebDAV issues
+
+### 2FA access for NextCloud
+If you have 2FA enabled on Nextcloud and want to use FolderSync, see this article: https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2
+[https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2](https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2)
+
+### Non-https server connection
+Cleartext http communication is disabled in latest releases of apps. Because of security concerns, it will not be re-enabled. FolderSync supports self-signed certificates so with minimum hassle you can enable SSL support on your home server.
+
+### Upload fails with java.io.IOException: Stream Closed or similar:
+Some servers has a very low request time out setting. If you are using Apache webserver, many NAS like Synology or MyCloud are, you can remove usage of LoadModule reqtimeout_module modules/mod_reqtimeout.so in apache conf file.
+
+### OwnCloud connection issues
+May be caused by streamlining of the configuration into two account types for ownCloud 6/7 and 8 respectively. Please reconfigure your accounts accordingly. If you get something like "refused stream" error for HTTP/2 you need to upgrade to latest nginx web server and version 2.9.4, where this is fixed.
+
+## SFTP issues
+
+### I get a "Received message is too long: 1416128878" error with SFTP. Why? 
+This seems to be a problem with the server. It responds with something the FolderSync doesn't understand. See detailed answer below:
+
+When I try to use sftp or scp2, I get a message like this: 
+Received message too long (or "Bad packet length") 1416586337 
+and the connection fails. What's wrong? 
+
+"In order for this to work, the SSH session must be "clean" — that is, it must have on it only information transmitted by the programs at either end. What often happens, though, is that there are statements in either the system or per-user shell startup files on the server (.bashrc,.profile,/etc/csh.cshrc,.login, etc.) which output text messages on login, intended to be read by humans (likefortune,echo "Hi there!", etc.). Such code should only produce output on interactive logins, when there is a tty attached to standard input. If it does not make this test, it will insert these text messages where they don't belong: in this case, polluting the protocol stream between scp2/sftp and sftp-server. The first four bytes of the text gets interpreted as a 32-bit packet length, which will usually be a wildly large number, provoking the error message above"
+
+Taken from here: http://www.snailbook.com/faq/sftp-corruption.auto.html
+
+So you need to modify the SFTP server in some way, so that it doesn't send back plain text.
+
+## Amazon Cloud Drive issues
+### Amazon Cloud Drive unavailable
+Amazon has without warning closed access for 3rd party apps, so this integration is no longer working and has been removed.
+
 ## Google Play
 ### Do I need to buy Premium/Pro version again on a new device?
 No, the premium upgrade or pro purchase is tied to your Google account. Just use the same account on Google Play on the new device, and your previous purchase will be recognized. Buying Premium -in-app purchase in FolderSync doesn't give access to FolderSync Pro but unlocks it to be identical.
@@ -49,34 +115,6 @@ When using external browser or custom Chrome tab to authenticate Google Drive or
 To make use of external SD card write access on Lollipop and later editions of Androids you have to give FolderSync (version 2.7.1 and later) the necessary permissions. You do this in filemanager using the External Storage permission option in left drawer menu (the shield icon). You will then have to select the SD card and press select "Allow access" or whatever the text is. Its important you select the root of the external SD card you want FolderSync to access or it won't work correctly. If you have selected a subfolder it may not work as expected. 
 
 Its also important to note, that if you change your SD card, you must regrant permissions for that SD card to FolderSync or the new SD card won't have write access. You must do this everytime you change SD card, no matter if a SD card has been previously granted permissions. If you decided FolderSync should no longer have write access to external SD card, you can revoke its permissions in settings.
-
-## Technical
-### Why are my transfer speeds slow?
-Transfer speeds can be slow for many reasons and can vary from device to device. FTPS/SFTP speeds can potentially be increased by disabling compression, since this limits how much data can be sent by how fast the CPU can compress the data. The speed of the memory card can also influence transfer speeds of course.
-Transfer speeds have been compared to other popular file managers and they are comparable on the devices we test on, but we are aware that users on some device experience lower speeds.
-
-### Why can't FolderSync be moved to the SD card?
-Unfortunately this feature will not be enabled, since it can cause scheduled syncs not to work and then a lot of users will probably complain. :-) However, if you have a rooted phone you can use this tool to move any app to SD:
-[https://market.android.com/details?id=com.leinardi.setinstalllocation](https://market.android.com/details?id=com.leinardi.setinstalllocation)
-
-Just as long as you know that doing so may cause scheduled syncs not to work correctly.
-
-### How do I use Tasker to run a sync in FolderSync?
-First of all the full version is required. The full version works as a Tasker plugin - when you configure a new task in Tasker you are presented with a number of Action categories, one of these being "Plugin". Select this and then select "FolderSync" plugin action. Then press edit and select the folderpair you wish to start syncing with this task is executed by Tasker. Then save the task as you normally would in Tasker. For a more general introduction to tasker go here:
-http://tasker.dinglisch.net/faq.html
-
-### I get a "Received message is too long: 1416128878" error with SFTP. Why? 
-This seems to be a problem with the server. It responds with something the FolderSync doesn't understand. See detailed answer below:
-
-When I try to use sftp or scp2, I get a message like this: 
-Received message too long (or "Bad packet length") 1416586337 
-and the connection fails. What's wrong? 
-
-"In order for this to work, the SSH session must be "clean" — that is, it must have on it only information transmitted by the programs at either end. What often happens, though, is that there are statements in either the system or per-user shell startup files on the server (.bashrc,.profile,/etc/csh.cshrc,.login, etc.) which output text messages on login, intended to be read by humans (likefortune,echo "Hi there!", etc.). Such code should only produce output on interactive logins, when there is a tty attached to standard input. If it does not make this test, it will insert these text messages where they don't belong: in this case, polluting the protocol stream between scp2/sftp and sftp-server. The first four bytes of the text gets interpreted as a 32-bit packet length, which will usually be a wildly large number, provoking the error message above"
-
-Taken from here: http://www.snailbook.com/faq/sftp-corruption.auto.html
-
-So you need to modify the SFTP server in some way, so that it doesn't send back plain text.
 
 ## Sync
 ### Why does instant sync not work?
@@ -163,3 +201,27 @@ http://code.google.com/p/android/issues/detail?id=1699
 Even the official Dropbox app has the same problem:
 http://forums.dropbox.com/topic.php?id=22437
 
+
+### Sync failing because of file conflicts
+If a file that has not been synced before, exists both locally and remote when syncing, and the two corresponding files do not have an identical modified timestamp, you will get a conflict. The same conflict will happen for a file that has been previously synced, if both the local and remote file changes since last sync (gets updated with a new timestamp and perhaps new content, by other applications or you). You can configure the folderpair to use the overwrite oldest file in such a case using the conflict setting under FolderPair->Advanced. The remote and local file may be identical, other than the timestamp, but FolderSync can not verify this without overwriting one of them with the other, since a file-hash of the remote file is often not available. 
+
+### Bad request errors or failing folderpairs
+Please try to re-authenticate account. In some cases you also need to re-select to remote folder for folderpairs, since the path structure on the remote end has changed because of usages of new API versions. Just re-select the folder you are already using, so the remote folder info can be refreshed.
+
+## Misc
+### Why are my transfer speeds slow?
+Transfer speeds can be slow for many reasons and can vary from device to device. FTPS/SFTP speeds can potentially be increased by disabling compression, since this limits how much data can be sent by how fast the CPU can compress the data. The speed of the memory card can also influence transfer speeds of course.
+Transfer speeds have been compared to other popular file managers and they are comparable on the devices we test on, but we are aware that users on some device experience lower speeds.
+
+### Why can't FolderSync be moved to the SD card?
+Unfortunately this feature will not be enabled, since it can cause scheduled syncs not to work and then a lot of users will probably complain. :-) However, if you have a rooted phone you can use this tool to move any app to SD:
+[https://market.android.com/details?id=com.leinardi.setinstalllocation](https://market.android.com/details?id=com.leinardi.setinstalllocation)
+
+Just as long as you know that doing so may cause scheduled syncs not to work correctly.
+
+### How do I use Tasker to run a sync in FolderSync?
+First of all the full version is required. The full version works as a Tasker plugin - when you configure a new task in Tasker you are presented with a number of Action categories, one of these being "Plugin". Select this and then select "FolderSync" plugin action. Then press edit and select the folderpair you wish to start syncing with this task is executed by Tasker. Then save the task as you normally would in Tasker. For a more general introduction to tasker go here:
+http://tasker.dinglisch.net/faq.html
+
+### HTTPS connection errors
+This can happen on newer Android devices, since deprecated encryption ciphers are no longer enabled by default with OkHttp/Android to increase security. This means, if you are connecting to an insecure web server using WebDAV or ownCloud, the connection may fail. You can either upgrade your server or try to enable self-signed certificates for you WebDAV/ownCloud account. See here which protocols/ciphers are supported on which Android versions: [https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm](https://developer.android.com/reference/javax/net/ssl/SSLEngine.htm)
