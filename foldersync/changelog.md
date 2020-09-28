@@ -6,6 +6,11 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.18 (27-09-2020)
+* Added experimental support for MinIO.
+* Reworked notifications.
+* Minor other fixes.
+
 ### Version 3.0.17 (18-09-2020)
 * Fix not always deleting files if using filters. 
 * Fixed issue with FTP when using special characters.
