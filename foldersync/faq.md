@@ -45,7 +45,7 @@ FolderSync doesn't support this, so if using a server like FileZilla you have to
 ## WebDAV issues
 
 ### 2FA access for NextCloud
-If you have 2FA enabled on Nextcloud and want to use FolderSync, see this article: https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2
+If you have 2FA enabled on Nextcloud and want to use FolderSync, see this article: 
 [https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2](https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2)
 
 ### I can not connect to a non-HTTPS WebDav server. Why?
@@ -61,6 +61,11 @@ May be caused by streamlining of the configuration into two account types for ow
 
 ## SFTP issues
 
+### I can not login to my SFTP server
+FolderSync uses the sshj library for SFTP. Please ensure your server algorithms are supported and key files are supported.
+
+[https://github.com/hierynomus/sshj](https://github.com/hierynomus/sshj)
+
 ### I get a "Received message is too long: 1416128878" error with SFTP. Why? 
 This seems to be a problem with the server. It responds with something the FolderSync doesn't understand. See detailed answer below:
 
@@ -73,6 +78,9 @@ and the connection fails. What's wrong?
 Taken from here: http://www.snailbook.com/faq/sftp-corruption.auto.html
 
 So you need to modify the SFTP server in some way, so that it doesn't send back plain text.
+
+### Login with private key file doesnt work
+Please ensure file is in one of the following formats: pkcs5, pkcs8, openssh-key-v1, ssh-rsa-cert-v01@openssh.com, ssh-dsa-cert-v01@openssh.com
 
 ## Amazon Cloud Drive issues
 ### Amazon Cloud Drive unavailable
