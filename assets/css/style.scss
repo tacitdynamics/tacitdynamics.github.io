@@ -27,3 +27,8 @@ header {
     font-family: 'Roboto', sans-serif;
     }
   
+#main-content h1:before { padding-right: 0.0em; margin-left: -0.2em; content: ""; }
+#main-content h2:before { padding-right: 0.0em; margin-left: -0.2em; content: ""; }
+#main-content h3:before { padding-right: 0.0em; margin-left: -0.2em; content: ""; }
+h4:before { padding-right: 0.0em; margin-left: -0.5em; content: ""; }
+

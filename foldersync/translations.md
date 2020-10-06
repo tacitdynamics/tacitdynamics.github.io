@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "FolderSync Tranlations"
+title: "FolderSync Translations"
 permalink: /foldersync/translations/
 ---
 

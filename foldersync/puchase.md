@@ -4,25 +4,30 @@ title: "Buy FolderSync"
 permalink: /foldersync/purchase/
 ---
 
-## Buy FolderSync
+## Purchase on Google Play
 
-Recommended way of obtaining FolderSync is buying on Google Play.
+The recommended way of obtaining FolderSync is buying on Google Play.
 
 <a href="https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.full"><img src="../../assets/img/android_app_on_play_logo_large.png" alt="drawing" style="width:200px;"/></a>
 
-You can buy FolderSync Pro below as well. For large volume quote, special needs or customization [contact](/contact) us directly.
+## Purchase from us
 
-### Pricing
+For large volume quote or special needs [contact](/contact) us directly.
 
-**Personal license**
- <br/>€9.95 (1 license) <a href="#!" class="paddle_button" data-product="529456">Buy</a> 
+By buying FolderSync you are subject to our [End user license agreement](/foldersync/eula).
 
-**Business license**
-<br/>€14.95 (1 license) <a href="#!" class="paddle_button" data-product="529458">Buy</a>
-<br/><br/>€119.95 (10 licenses) <a href="#!" class="paddle_button" data-product="529459">Buy</a>
+### Personal license
+A Personal license is an option for private individuals who purchase a license with their own funds, and solely for their own use.<br/>
 
-By buying FolderSync you are subject to your [End user license agreement](/foldersync/eula).
+<a href="#!" class="paddle_button" data-product="529456">Buy now - €9.95 (1x personal license)</a>
 
+### Business license
+A business license is the standard licensing option for organizations and business entities. Licenses are purchased by the company and can be used by any single person within this organization.
+
+<a href="#!" class="paddle_button" data-product="529458">Buy now - €14.95 (1x business license)</a><br/><br/>
+<a href="#!" class="paddle_button" data-product="529459">Buy now  €119.95 (10x business license)</a>
+
+### Info
 Our order process is conducted by our online reseller Paddle.com. Paddle.com is the Merchant of Record for all our orders. Paddle provides all customer service inquiries and handles returns.
 
-FolderSync requires Android 6.0 or newer to run.
+FolderSync requires Android 6.0 or newer to run. Upon purchase you will receive link to APK file.
