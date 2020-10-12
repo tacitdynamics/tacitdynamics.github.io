@@ -6,9 +6,11 @@ permalink: /foldersync/purchase/
 
 ## Purchase on Google Play
 
-The recommended way of obtaining FolderSync is buying on Google Play.
+The recommended way of obtaining FolderSync is buying on Google Play or Huawei AppGallery.
 
 <a href="https://play.google.com/store/apps/details?id=dk.tacit.android.foldersync.full"><img src="../../assets/img/android_app_on_play_logo_large.png" alt="drawing" style="width:200px;"/></a>
+
+<a href="https://appgallery.cloud.huawei.com/ag/n/app/C102886751?channelId=website&referrer=www.tacit.dk&id=177cdbe4a20b43f78bdc542036d677dc&s=742B21AE8A217DB9B4884DAEBF6152BA009A1A9DA260F33DBBF99D1DB7145A9E&detailType=0&v="><img src="../../assets/img/appgallery.png" alt="drawing" style="width:174px;margin-left: 14px;"/></a>
 
 ## Purchase from us
 
