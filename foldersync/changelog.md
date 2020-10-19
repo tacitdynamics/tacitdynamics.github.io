@@ -6,6 +6,14 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.20 (11-10-2020)
+* Fix folders being excluded erroneously when using file filters.
+
+### Version 3.0.19 (09-10-2020)
+* Fix filter issue with conflict file/folder filter. 
+* Better connection handling for SMB/FTP/SFTP.
+* Fix pCloud login for EU users.
+
 ### Version 3.0.18 (27-09-2020)
 * Added experimental support for MinIO.
 * Reworked notifications.
