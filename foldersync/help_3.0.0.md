@@ -131,14 +131,20 @@ Some notes:
 
 **Examples**
 
-**Include or exclude a folder xyz in rootfolder and all its sub folders**<br/>
-Use folder filter of type "startswith" with value "/mnt/sdcard/rootfolder/xyz". 
+**Include or exclude a file abc.txt**<br/>
+Use filter of type "File name equals" with value "abc.txt".
 
-**Include a folder xyz in rootfolder and all its files, but not its subfolders**<br/>
-Use folder filter of type "equals" with value "/mnt/sdcard/rootfolder/xyz". 
+**Include or exclude all files of type avi**<br/>
+Use filter of type "File extension" with value "avi".
+
+**Include or exclude a specific folder xyz and all its sub folders**<br/>
+Use filter of type "Folder name starts with" with value "/mnt/sdcard/rootfolder/xyz". 
+
+**Include a specific folder xyz and all files in this folder, but not its subfolders**<br/>
+Use filter of type "Folder name equals" with value "/mnt/sdcard/rootfolder/xyz". 
 
 **Include any folder named xyz and all files in those folders, but not their subfolders**<br/>
-Use folder filter of type "equals" with value "xyz". 
+Use filter of type "Folder name equals" with value "xyz". 
 
 
 ## Syncing

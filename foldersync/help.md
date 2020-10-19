@@ -30,7 +30,7 @@ For this example we will add our Google Drive account, so FolderSync can access 
 
 Depending on the account type, this process may be different. Some cloud providers does not support OAuth authentication. For those provider types where FolderSync need to store credentials, they are stored in encrypted form.
 
-If you want to use SMB, FTP, SFTP or WebDAV, you have to set it up on a NAS, server or your home PC, or have access to an existing account. Explaining how to setup this is not in the scope of this help text. Use Google. :-)
+If you want to use SMB, FTP, SFTP or WebDAV (HTTPS only), you have to set it up on a NAS, server or your home PC, or have access to an existing account. Explaining how to setup this is not in the scope of this help text. Use Google. :-)
 
 Lets continue configuring our Google Drive account. 
 
@@ -123,7 +123,7 @@ You can add filters where your can configure to include or exclude files and fol
 
 Some notes:
 
-* All filters are case-insensitive. 
+* All filters case-insensitive. 
 * File extension filters can be for example "jpg" or "doc". Don't include leading period.
 * If filter value for the folder filters "contains", "equals", "startsWith" and "endsWith" contains a forward slash "/" then the filter is applied to the device path of the folder else only the folder name.
 * Regex filters are only applied to filename or foldername, not the full path. See more info for [regex](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html).
@@ -131,14 +131,20 @@ Some notes:
 
 **Examples**
 
-**Include or exclude a folder xyz in rootfolder and all its sub folders**<br/>
-Use folder filter of type "startswith" with value "/mnt/sdcard/rootfolder/xyz". 
+**Include or exclude a file abc.txt**<br/>
+Use filter of type "File name equals" with value "abc.txt".
 
-**Include a folder xyz in rootfolder and all its files, but not its subfolders**<br/>
-Use folder filter of type "equals" with value "/mnt/sdcard/rootfolder/xyz". 
+**Include or exclude all files of type avi**<br/>
+Use filter of type "File extension" with value "avi".
+
+**Include or exclude a specific folder xyz and all its sub folders**<br/>
+Use filter of type "Folder name starts with" with value "/mnt/sdcard/rootfolder/xyz". 
+
+**Include a specific folder xyz and all files in this folder, but not its subfolders**<br/>
+Use filter of type "Folder name equals" with value "/mnt/sdcard/rootfolder/xyz". 
 
 **Include any folder named xyz and all files in those folders, but not their subfolders**<br/>
-Use folder filter of type "equals" with value "xyz". 
+Use filter of type "Folder name equals" with value "xyz". 
 
 
 ## Syncing
@@ -151,7 +157,7 @@ Two-way sync copies files in both directions, overwriting older files if duplica
 This feature is experimental and can be enabled for a folderpair that syncs local files. When enabled, local file changes will be detected in the device folder, and a immediate partial sync will be attempted. It is recommended that a scheduled sync is still configured, as some change events are not detected properly - fx. on some custom ROMs etc. Newer version of Android may not support this feature on external SD cards.
 
 ### Sync of deletions
-If the "Sync deletions" option is enabled, deletions will also be synced, for all types of sync. FolderSync has an internal database of synced files. If a previously synced file is deleted at either end, the deletion will also happen at the opposite end (if the file at the opposite end has not changed since last sync). One-way sync will only delete files at target, while two-way sync will delete both local and remote files if needed. Use this option only if you are sure what you are doing, and at your own risk!
+If the "Sync deletions" option is enabled deletions will also be synced for all types of sync. FolderSync has an internal database of synced files. If a previously synced file is deleted at either end, the deletion will also happen at the opposite end (if the file at the opposite end has not changed or been added since last sync). One-way sync will only delete files at target, while two-way sync will delete both local and remote files if needed. Use this option only if you are sure what you are doing, and at your own risk!
 
 ## Sync status
 The sync status on the dashboard provides you with the opportunity to see whats going on when syncing, and to view a history of past syncs that have occurred. It also informs you when the next sync check will run. 
