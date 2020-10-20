@@ -6,6 +6,14 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.22 (20-10-2020)
+* Fix reading PKCS8 key files.
+
+### Version 3.0.21 (19-10-2020)
+* Exclude folders from instant sync bases on filters.
+* Added permissions overview to resolve potential issues.
+* Re-added "Keep screen on" setting.
+
 ### Version 3.0.20 (11-10-2020)
 * Fix folders being excluded erroneously when using file filters.
 
