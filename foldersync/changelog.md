@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.23 (01-11-2020)
+* Fix sync error that could occur when sync is queued. 
+* Fix SMB2 folder creation issue.
+
 ### Version 3.0.22 (20-10-2020)
 * Fix reading PKCS8 key files.
 
