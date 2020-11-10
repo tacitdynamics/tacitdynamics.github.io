@@ -98,6 +98,7 @@ You can now configure your folderPair:
 * **Use MD5 checksums:** Check this setting if MD5 checksum should be calculated for files. May decrease sync speed and use extra battery, but can also result in less download and upload traffic. Enabled by default.
 * **Use temp-file scheme:** Check this setting, if you want to use temp-file scheme. Temp-file scheme means files are transferred using temporary name, and upon completion of transfer is renamed to the final filename. This may break the functionality of some cloud providers (proper revisions etc.). Enabled by default.
 * **Disable file-size check:** Check this if transferred files should not be validated against source by comparing file-size. Some providers adds bytes to certain files when uploaded, so this setting can help in those cases. 
+* **Only sync if charging:** Check this setting if FolderPair should only sync when charging.
 * **Copy files to time-stamped folder:** With the corresponding naming pattern field this can be used to use FolderSync for backing up files. Each sync will backup all files to a new subfolder in the target folder named accordingly to the naming-pattern configured. This can thus only be used with one-way sync type. See this [link](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) for details on how to use a custom naming pattern. Note that FolderSync doesn't support free text in the format string, only pattern letters except for time zone and era, which are not supported.
 
 ### Sync options - Connection
@@ -108,7 +109,6 @@ You can now configure your folderPair:
 * **Sync when roaming:** Allow syncing while roaming. Use with caution!
 * **Use other connections:** Enable this if other connection types should be allowed (Bluetooth, USB, etc.).
 * **Ignore network state:** Ignore any detected network state and attempt syncing of files regardless.
-* **Only sync if charging:** Check this setting if FolderPair should only sync when charging.
 * **Allowed WiFi SSID's:** Enter a list of allowed WiFi SSID's to sync on. If empty, all WiFi networks are allowed.
 * **Disallowed Wifi SSID's:** Enter a list of disallowed WiFi SSID's. 
 
