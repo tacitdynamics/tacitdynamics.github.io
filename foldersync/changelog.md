@@ -6,6 +6,15 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.25 (29-11-2020)
+* Fix layout issue.
+* Added cancel button file manager transfer notification.
+
+### Version 3.0.24 (27-11-2020)
+* New startup wizard. 
+* New hour scheduling interval options. 
+* pCloud/OneDrive bug fixes.
+
 ### Version 3.0.23 (01-11-2020)
 * Fix sync error that could occur when sync is queued. 
 * Fix SMB2 folder creation issue.
