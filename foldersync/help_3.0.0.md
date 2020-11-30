@@ -71,9 +71,13 @@ You can now configure your folderPair:
 
 ### General
 * **Name:** Unique name of your choice.
-* **Sync type:** The type of sync - one-way to local or remote folder or two-way sync. 
-* **Remote folder:** The remote folder to sync to or from. Can be selected after an account has been chosen.
-* **Local folder:** The local folder on the device to sync to or from.
+* **Sync type:** The type of sync.
+
+    **To remote folder:** Files will be uploaded to remote cloud/server folder only. Files will not be downloaded to device folder.<br/>
+    **To local folder:** Files will be downloaded to device folder only. Files will not be uploaded to remote folder.<br/>
+    **Two-way:** Files will both be uploaded to remote server and downloaded to device folder.
+* **Remote folder:** The remote folder to sync to/from. Can be selected after an account has been chosen.
+* **Local folder:** The local folder on the device to sync to/from.
 
 ### Scheduling
 * **Use scheduled sync:** Check this if you want to sync on a schedule (and not solely by manual start or Tasker).
