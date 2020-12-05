@@ -179,6 +179,20 @@ The settings panel allow you to backup/restore the underlying database. The back
 
 You also have the option to disable scheduled syncs completely. If you do this, no scheduled syncs will run. Only disable this, if you use manual sync only or syncs initiated from Tasker or Locale. 
 
+## Notifications
+If you click About->Settings->Notifications you will be taken to Android OS notification settings for FolderSync.
+Here you can configure the different notification FolderSync show, if they should muted or hidden etc.
+
+FolderSync has 3 configured notification channels (on Android 8.0 or newer).
+
+* FolderSync service - notification shown when background sync is running
+* FolderSync File Manager - notifications shown by the file manager
+* FolderSync Sync - Notification shown as configured on folderPair notifications screen
+
+Notification settings   | Notification channel settings
+--------|------|---------
+![Test](/assets/img/notification_settings.png)   |   ![Test](/assets/img/notification_channel_settings.png)
+
 ## Tasker
 FolderSync works as Tasker plugin. This means one or more folderpair syncs can be initiated or cancelled when a condition or rule you configured in Tasker occurs. Configuring Tasker is out of the scope of this help text, but FolderSync is found in the the Plugin section. Note that syncs will run no matter what settings they are configured with, when initiated from Tasker, except if the allowed connection requirement(s) are not met.
 
