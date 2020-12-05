@@ -6,6 +6,9 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.26 (03-12-2020)
+* Added option to see Google Drive starred items.
+
 ### Version 3.0.25 (29-11-2020)
 * Fix layout issue.
 * Added cancel button file manager transfer notification.
