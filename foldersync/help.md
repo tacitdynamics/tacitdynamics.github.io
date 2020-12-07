@@ -125,7 +125,7 @@ You can add filters where your can configure to include or exclude files and fol
 
 Some notes:
 
-* Filter value should match the local folder path when using path in filter. Filters will path will not be compare to remote folder path.
+* Filter value should match the local folder path when using path in filter. Filters with path will not be compared to remote folder path.
 * All filters case-insensitive. 
 * File extension filters can be for example "jpg" or "doc". Don't include leading period.
 * If filter value for the folder filters "contains", "equals", "startsWith" and "endsWith" contains a forward slash "/" then the filter is applied to the device path of the folder else only the folder name.
