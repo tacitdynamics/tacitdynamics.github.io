@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.27 (09-12-2020)
+* Fix crash on Android 6.0. 
+* Minor UI fixes.
+
 ### Version 3.0.26 (03-12-2020)
 * Added option to see Google Drive starred items.
 
