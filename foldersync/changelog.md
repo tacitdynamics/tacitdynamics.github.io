@@ -6,6 +6,9 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.28 (16-12-2020)
+* Fix potential pincode issue. 
+* MEGA deletions will now move deletions to rubbish bin.
 ### Version 3.0.27 (09-12-2020)
 * Fix crash on Android 6.0. 
 * Minor UI fixes.
