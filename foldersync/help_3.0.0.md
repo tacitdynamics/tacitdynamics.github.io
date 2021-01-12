@@ -194,10 +194,11 @@ Notification settings   | Notification channel settings
 --------|------|---------
 ![Test](/assets/img/notification_settings.png)   |   ![Test](/assets/img/notification_channel_settings.png)
 
-## Tasker
-FolderSync works as Tasker plugin. This means one or more folderpair syncs can be initiated or cancelled when a condition or rule you configured in Tasker occurs. Configuring Tasker is out of the scope of this help text, but FolderSync is found in the the Plugin section. Note that syncs will run no matter what settings they are configured with, when initiated from Tasker, except if the allowed connection requirement(s) are not met.
+## Tasker or similar automation apps
+FolderSync works as Tasker plugin and supports deeplinks when triggered from other automation apps. This means one or more folderpair syncs can be initiated or cancelled when a condition or rule you configured in automation app occurs. Configuring automation apps is out of the scope of this help text, but FolderSync is found in the the Plugin section for Tasker. Note that syncs will run no matter what settings they are configured with, when initiated from automation app, except if the allowed connection requirement(s) are not met.
 
-FolderSync also supports triggering actions via deeplinks. To trigger a deeplink from Tasker use "Browse URL" action.
+As mentioned FolderSync also supports triggering actions via deeplinks. To trigger a deeplink from Tasker use "Browse URL" action.
+For deeplinks to work automation must be enabled in Foldersync settings. Opening deeplinks by copy/pasting directly to browser will not work.
 
 ## Logging
 FolderSync incorporates its own log collection functionality, to help the developers fix bugs that might exist.

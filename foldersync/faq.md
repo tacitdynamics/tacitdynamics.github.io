@@ -130,6 +130,13 @@ To make use of external SD card write access on Lollipop and later editions of A
 Its also important to note, that if you change your SD card, you must regrant permissions for that SD card to FolderSync or the new SD card won't have write access. You must do this everytime you change SD card, no matter if a SD card has been previously granted permissions. If you decided FolderSync should no longer have write access to external SD card, you can revoke its permissions in settings.
 
 ## Sync
+
+### On Android 11 <sdcard>/Android/data folder can no longer be accessed, why?
+Android 11 has new file permission requirements and has restricted access to certain folders, like the data folder. Unfortunately apps can't request these new permissions yet, and be accepted on the play store. This should be possible soon. Unfortunately it seems data folder will not be accessible even with new permissions.
+More info: https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play
+
+Note: Built-in vendor file managers can still access protected folders in some cases.
+
 ### Why does instant sync not work?
 This feature works only for local files device. When enabled, local file changes will be detected in the device folder, and a immediate partial sync will be attempted if other folderpair conditions allow this, such as network settings. Some custom ROMs may not support this. Newer versions of Android may not support this feature on external SD cards, since it appears folder/file change events are not propogated to apps properly.
 
