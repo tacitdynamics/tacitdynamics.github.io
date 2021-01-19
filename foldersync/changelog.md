@@ -6,6 +6,10 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.29 (19-01-2021)
+* Instant sync optimization. *
+* Minor bug fixes.
+
 ### Version 3.0.28 (16-12-2020)
 * Fix potential pincode issue. 
 * MEGA deletions will now move deletions to rubbish bin.
