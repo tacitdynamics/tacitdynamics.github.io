@@ -42,8 +42,12 @@ If you want to sync to a folder somebody has shared with you, you need to add it
 ### TLS session resumption for FTP
 FolderSync doesn't support this, so if using a server like FileZilla you have to disable it in server settings to use Foldersync.
 
-## WebDAV issues
+## SMB issues
+### Syncing files ending with dot (.) fails when uploading to SMB server?
+Unfortunately this is an issue with many SMB servers and/or widows, they do not accept files ending with dot. 
+The issue is not the missing extension, but the ending dot.
 
+## WebDAV issues
 ### 2FA access for NextCloud
 If you have 2FA enabled on Nextcloud and want to use FolderSync, see this article: 
 [https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2](https://help.nextcloud.com/t/how-to-connect-to-webdav-using-totp/7036/2)
