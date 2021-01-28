@@ -6,6 +6,11 @@ permalink: /foldersync/changelog/
 
 ## FolderSync Changelog
 
+### Version 3.0.30 (26-01-2021)
+* Setting modified time for Dropbox uploads. 
+* Option to reorder accounts list. 
+* Shortcut support for folder favorites.
+
 ### Version 3.0.29 (19-01-2021)
 * Instant sync optimization. *
 * Minor bug fixes.
