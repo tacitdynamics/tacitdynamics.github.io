@@ -47,6 +47,89 @@ WebDAV | FTP | SMB2
 --------|------|------
 ![Test](/assets/img/3.0.0/foldersync_webdav.png)  | ![Test](/assets/img/3.0.0/foldersync_ftp.png) | ![Test](/assets/img/3.0.0/foldersync_smb2.png)
 
+## Account configuration options
+
+### Cloud services with OAuth authentication
+For cloud services like Box, Dropbox Google Drive, Hubic, OneDrive and pCloud you can initiate the browser based authentication flow by pressing [Authenticate Account] button. After you have authenticated in the browser it should redirect you  back to the app and you can save the account. 
+
+If you are instead redirect back to a webpage, you can copy the fallback OAuth code, press back until you see the account screen in FolderSync and again and use the [Enter OAuth code] button to enter the code.
+
+### Login based cloud providers
+For login based cloud providers like CloudMe, HiDrive, Livedrive, MEGA, MyDrive.ch, MyKolab.com, NetDocuments, Storegate, SugarSync, WEB.DE and Yandex Disk you will need to enter your credentials to the service to connect.
+
+### Amazon S3
+* **Access key ID:** The access key ID.
+* **Secret access key:** The secret access key.
+* **Custom endpoint:** If targeting custom S3 endpoint enter it here.
+* **Use reduced redundancy:** If you want to use reduced redunancy for buckets created.
+* **Region:** The region with which to use this account entry.
+
+### MinIO
+Note: MinIO account can be used to target S3-compatible servers other than MinIO.
+* **Access key ID:** The access key ID.
+* **Secret access key:** The secret access key.
+* **Server adress:** The IP adress or hostname of the MinIO server (without protocol or path), so like "192.34.243.2" or "my.server.com".
+* **Port:** The port to use.
+
+### FTP
+Note: For your own safety please do not use FTP or implicit FTPS.
+* **Login name:** Your username for the server.
+* **Password:** Your password for the server.
+* **Server adress:** The IP adress or hostname of the server (without protocol or path), so like "192.34.243.2" or "my.server.com".
+* **Port:** The port to use.
+* **Path (optional):** Optional path on the server that the connection should open on connection.
+* **Connection type:** Choose plain FTP, explicit FTPS (recommend) or implicit FTPS (not recommended).
+* **Allow self-signed cert:** Enable if you use a self-signed SSL certicate on the server.
+* **Active mode:** To enable FTP active mode.
+* **Disable compression:** To disable stream compression.
+* **Force usage of MLSD command:** Force listing of FTP folders to use MLSD command, this can be useful for servers that support this command but doesn't let the client know.
+* **Charset:** The charset that the server uses to return with.
+
+### SFTP
+* **Login name:** Your username for the server.
+* **Password:** Your password for the server.
+* **Server adress:** The IP adress or hostname of the server (without protocol or path), so like "192.34.243.2" or "my.server.com".
+* **Port:** The port to use.
+* **Path (optional):** Optional path on the server that the connection should open on connection.
+* **Host key fingerprint:** The host key fingerprint, this will be pre-filled when you test account. If the host key changed connection will fail until you update the fingerprint again.
+* **Known hosts file:** Known host file - supply this if you want to ensure connection can only be made to the specified servers in the file.
+* **Private key-file:** A private key file used for authentication in addition to or instead of username/password.
+* **Key-file password:** The password to access the private key file.
+* **Disable compression:** To disable stream compression.
+* **Charset:** The charset that the server uses to return with.
+
+### SMB1
+Note: Please use SMB2 if possible.
+* **Login name:** Your username for the server.
+* **Password:** Your password for the server.
+* **Server adress:** The IP adress or hostname of the server (without protocol or path), so like "192.34.243.2" or "my.server.com".
+* **Port:** The port to use.
+* **Path (optional):** Optional path on the server that the connection should open on connection.
+* **NTLM domain (optional):** Some Windows SMB servers may require this.
+
+### SMB2
+* **Login name:** Your username for the server.
+* **Password:** Your password for the server.
+* **Server adress:** The IP adress or hostname of the server (without protocol or path), so like "192.34.243.2" or "my.server.com".
+* **Port:** The port to use.
+* **SMB share name:** The name of the SMB share you wish to connect to, this must be entered. For SMB2 FolderSync has no browse shares functionality.
+* **NTLM domain (optional):** Some Windows SMB servers may require this.
+
+### WebDAV/NextCloud/OwnCloud
+Note: FolderSync only support WebDAV connection to servers with SSL encryption.
+The NextCloud/OwnCloud account types automatically adds the WebDAV compatible path on the server to the configuration. If it doesn't work for your server, please try to create a plain WebDAV account using configuration guide found in the NextCloud/OwnCloud documentation.
+* **Login name:** Your username for the server.
+* **Password:** Your password for the server.
+* **Server adress:** The IP adress or hostname of the server (without protocol or path), so like "192.34.243.2" or "my.server.com".
+* **Port:** The port to use.
+* **Path (optional):** Optional path on the server that the connection should open on connection.
+* **NTLM domain (optional):** Some Windows WebDAV servers may require this.
+* **Allow self-signed cert:** Enable if you use a self-signed SSL certicate on the server.
+* **Allow insecure Cipher suites:** Some old servers have insecure ciphers for SSL encryption which you can choose to support.
+* **Use expect-continue:** Some WebDAV servers doesn't like this to be enabled.
+* **Use HTTP 1.1 only:** Some WebDAV server has issues with HTTP/2 hence why you can force the connection to use HTTP 1.1.
+* **Authentication type:** Use this to explicitly set the authentication type to use against the server.
+
 ## Create a folderpair
 From the dashboard you can create a folderPair. A folderPair is a definition of a sync that you want FolderSync to perform. It defines a sync between a local folder on your device and a remote folder for your chosen provider type. A sync can sync files to remote cloud storage, to your local storage or both ways. 
 
@@ -91,7 +174,7 @@ You can now configure your folderPair:
 ### Sync options - Advanced
 * **Overwrite old files:** Choose what to do if a file already exist at target. Default setting is to overwrite the old file, so the newest file is used.
 * **If conflicting modifications:** Choose what to do if a conflicting modification is detected. A conflicting modification is one where both the source and target file has been changed since last recorded sync. Default is to skip file, which will result in sync warnings. 
-* **Instant sync:** Select this for instant sync on change. Only detects changes on local device and may not work with external SD card on newer versions of Android. Use with care!
+* **Instant sync:** Select this for instant sync on change. Only detects changes on local device and may not work with external SD card on newer versions of Android. Can not be used with "Copy files to time-stamped folder" option or one-way sync to SD card.
 * **Exclude from force sync:** Select if you want to exclude this folderpair from syncing when pressing [Sync all] button on Sync Status screen.
 * **Delete source files after sync:** For one-way sync only. After syncing of files, the source files are deleted. Use with care! Disabled by default.
 * **Retry sync if failed:** Enable to automatically retry a scheduled sync at a later time if the sync failed. Disabled by default.
@@ -101,7 +184,7 @@ You can now configure your folderPair:
 * **Use temp-file scheme:** Check this setting, if you want to use temp-file scheme. Temp-file scheme means files are transferred using temporary name, and upon completion of transfer is renamed to the final filename. This may break the functionality of some cloud providers (proper revisions etc.). Enabled by default.
 * **Disable file-size check:** Check this if transferred files should not be validated against source by comparing file-size. Some providers adds bytes to certain files when uploaded, so this setting can help in those cases. 
 * **Only sync if charging:** Check this setting if FolderPair should only sync when charging.
-* **Copy files to time-stamped folder:** With the corresponding naming pattern field this can be used to use FolderSync for backing up files. Each sync will backup all files to a new subfolder in the target folder named accordingly to the naming-pattern configured. This can thus only be used with one-way sync type. See this [link](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) for details on how to use a custom naming pattern. Note that FolderSync doesn't support free text in the format string, only pattern letters except for time zone and era, which are not supported.
+* **Copy files to time-stamped folder:** With the corresponding naming pattern field this can be used to use FolderSync for backing up files. Each sync will backup all files to a new subfolder in the target folder named accordingly to the naming-pattern configured. This can thus only be used with one-way sync type. See this [link](https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html) for details on how to use a custom naming pattern. Note that FolderSync doesn't support free text in the format string, only pattern letters except for time zone and era, which are not supported. Only available for one-way sync.
 
 ### Sync options - Connection
 * **Use WiFi:** Check this setting, if this Folderpair is allowed to sync on WiFi.

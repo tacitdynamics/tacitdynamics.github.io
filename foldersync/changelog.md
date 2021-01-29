@@ -5,6 +5,8 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.31 (29-01-2021)
+* Fix FTP connection issues for some servers.
 
 ### Version 3.0.30 (26-01-2021)
 * Setting modified time for Dropbox uploads. 
