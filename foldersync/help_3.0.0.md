@@ -83,6 +83,7 @@ Note: For your own safety please do not use FTP or implicit FTPS.
 * **Active mode:** To enable FTP active mode.
 * **Disable compression:** To disable stream compression.
 * **Force usage of MLSD command:** Force listing of FTP folders to use MLSD command, this can be useful for servers that support this command but doesn't let the client know.
+* **Use legacy FTP library:** Use legacy FTP library for compatibility with some FTP servers and special character encoding.
 * **Charset:** The charset that the server uses to return with.
 
 ### SFTP
@@ -172,7 +173,7 @@ You can now configure your folderPair:
 * **Sync deletions:** Check this if deletions are to be synced. Use with care! Disabled by default. 
 
 ### Sync options - Advanced
-* **Overwrite old files:** Choose what to do if a file already exist at target. Default setting is to overwrite the old file, so the newest file is used.
+* **Overwrite old files:** Choose what to do if a file already exist at target. Default setting is to overwrite the old file, so the newest file is used, which would the setting for most to use if running a normal sync. Some people may only want a file to transfer once and then not be updated on changes, in that case set this to never.
 * **If conflicting modifications:** Choose what to do if a conflicting modification is detected. A conflicting modification is one where both the source and target file has been changed since last recorded sync. Default is to skip file, which will result in sync warnings. 
 * **Instant sync:** Select this for instant sync on change. Only detects changes on local device and may not work with external SD card on newer versions of Android. Can not be used with "Copy files to time-stamped folder" option or one-way sync to SD card.
 * **Exclude from force sync:** Select if you want to exclude this folderpair from syncing when pressing [Sync all] button on Sync Status screen.

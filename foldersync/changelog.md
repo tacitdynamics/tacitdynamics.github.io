@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.32 (30-01-2021)
+* Added option to use legacy FTP libary for compatibility reasons with some servers/special characters.
+
 ### Version 3.0.31 (29-01-2021)
 * Fix FTP connection issues for some servers.
 
