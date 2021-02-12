@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.33 (12-02-2021)
+* Added permission option to access Android/data folder on internal storage on Android 11.
+
 ### Version 3.0.32 (30-01-2021)
 * Added option to use legacy FTP libary for compatibility reasons with some servers/special characters.
 
