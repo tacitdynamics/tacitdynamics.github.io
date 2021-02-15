@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.34 (15-02-2021)
+* Fix filter issue with excluding unwanted files.
+
 ### Version 3.0.33 (12-02-2021)
 * Added permission option to access Android/data folder on internal storage on Android 11.
 
