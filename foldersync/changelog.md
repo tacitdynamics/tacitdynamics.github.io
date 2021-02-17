@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.35 (17-02-2021)
+* Rollback SFTP change.
+
 ### Version 3.0.34 (15-02-2021)
 * Fix filter issue with excluding unwanted files.
 
