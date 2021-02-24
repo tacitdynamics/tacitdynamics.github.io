@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.36 (23-02-2021)
+* Fix potential issue with file sync from external SD card.
+
 ### Version 3.0.35 (17-02-2021)
 * Rollback SFTP change.
 
