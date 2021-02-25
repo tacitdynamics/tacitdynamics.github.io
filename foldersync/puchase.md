@@ -19,12 +19,13 @@ For large volume quote or special needs [contact](/contact) us directly.
 By buying FolderSync you are subject to our [End user license agreement](/foldersync/eula).
 
 ### Personal license
-A Personal license is an option for private individuals who purchase a license with their own funds, and solely for their own use.<br/>
+A Personal license is an option for private individuals who purchase a license with their own funds, and solely for their own use.
+You are free to install this on all your devices in your household for the cost of 1 license, hence why the price is higher than on Google Play.<br/>
 
 <a href="#!" class="paddle_button" data-product="529456">Buy now - €9.95 (1x personal license)</a>
 
 ### Business license
-A business license is the standard licensing option for organizations and business entities. Licenses are purchased by the company and can be used by any single person within this organization.
+A business license is the standard licensing option for organizations and business entities. Licenses are purchased by the company and can be used by any single person within this organization. 
 
 <a href="#!" class="paddle_button" data-product="529458">Buy now - €14.95 (1x business license)</a><br/><br/>
 <a href="#!" class="paddle_button" data-product="529459">Buy now  €119.95 (10x business license)</a>
