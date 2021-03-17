@@ -5,6 +5,13 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.38 (17-03-2021)
+* Fix for SMB2 issue.
+
+### Version 3.0.37 (15-03-2021)
+* Fix for DST time parsing issue. 
+* New list design for folderpairs/accounts.
+
 ### Version 3.0.36 (23-02-2021)
 * Fix potential issue with file sync from external SD card.
 
