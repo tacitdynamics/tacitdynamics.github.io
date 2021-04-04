@@ -9,7 +9,7 @@ permalink: /support
 ## Common issues
 Please check the [FolderSync FAQ](/foldersync/faq) before contacting support.
 
-## Generel help
+## General help
 Consult the [help](/foldersync/help/) page for further info on how to use FolderSync.
 
 ## Request refund or transfer of license
