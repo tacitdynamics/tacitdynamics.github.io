@@ -5,6 +5,10 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.39 (11-04-2021)
+* Added search to file manager.
+* Other minor fixes
+
 ### Version 3.0.38 (17-03-2021)
 * Fix for SMB2 issue.
 
