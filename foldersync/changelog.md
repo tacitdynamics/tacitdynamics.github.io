@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.40 (12-04-2021)
+* Fix WebDAV folder lookup issue.
+
 ### Version 3.0.39 (11-04-2021)
 * Added search to file manager.
 * Other minor fixes
