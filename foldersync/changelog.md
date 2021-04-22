@@ -5,6 +5,11 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.41 (22-04-2021)
+* Support new Dropbox OAuth flow, users may need to re-authenticate Dropbox. 
+* Fix WebDAV encoding issue. 
+* Fix monthly sync time display.
+
 ### Version 3.0.40 (12-04-2021)
 * Fix WebDAV folder lookup issue.
 
