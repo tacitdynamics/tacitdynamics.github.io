@@ -5,6 +5,10 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.42 (06-05-2021)
+* USB OTG support on permissions screen. 
+* Supports Manage all files permission on Android 11.
+
 ### Version 3.0.41 (22-04-2021)
 * Support new Dropbox OAuth flow, users may need to re-authenticate Dropbox. 
 * Fix WebDAV encoding issue. 
