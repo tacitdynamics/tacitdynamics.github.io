@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.43 (07-05-2021)
+* Fix permission issue on Android 10.
+
 ### Version 3.0.42 (06-05-2021)
 * USB OTG support on permissions screen. 
 * Supports Manage all files permission on Android 11.
