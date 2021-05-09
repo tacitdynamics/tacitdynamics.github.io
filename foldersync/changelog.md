@@ -5,6 +5,10 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.44 (09-05-2021)
+* Fix issue with selecting USB OTG drive on folderpair. 
+* Added S3-compatible account type.
+
 ### Version 3.0.43 (07-05-2021)
 * Fix permission issue on Android 10.
 
