@@ -154,6 +154,9 @@ You can now configure your folderPair:
 3. Select the remote and local folder for the folderpair - when pressed a selection screen comes up where you can browse to the desired folder. 
 7. Now you can either presse [Save] button or configure additional settings. See below for further details.
 
+## Reset
+There is a reset button if you want to do a clean sync. Resetting a folderpair will remove the stored sync status for all synced files, so for each file encountered in a sync it will be handled as it has never been synced before. This is equivalent to creating a new folderPair with the same settings. It will not delete sync history.
+
 ## Folderpair configuration options
 
 ### General

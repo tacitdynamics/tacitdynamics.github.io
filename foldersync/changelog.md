@@ -5,6 +5,25 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.44 (09-05-2021)
+* Fix issue with selecting USB OTG drive on folderpair. 
+* Added S3-compatible account type.
+
+### Version 3.0.43 (07-05-2021)
+* Fix permission issue on Android 10.
+
+### Version 3.0.42 (06-05-2021)
+* USB OTG support on permissions screen. 
+* Supports Manage all files permission on Android 11.
+
+### Version 3.0.41 (22-04-2021)
+* Support new Dropbox OAuth flow, users may need to re-authenticate Dropbox. 
+* Fix WebDAV encoding issue. 
+* Fix monthly sync time display.
+
+### Version 3.0.40 (12-04-2021)
+* Fix WebDAV folder lookup issue.
+
 ### Version 3.0.39 (11-04-2021)
 * Added search to file manager.
 * Other minor fixes
