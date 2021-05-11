@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.45 (11-05-2021)
+* Fix for uploading large files to Amazon S3.
+
 ### Version 3.0.44 (09-05-2021)
 * Fix issue with selecting USB OTG drive on folderpair. 
 * Added S3-compatible account type.
