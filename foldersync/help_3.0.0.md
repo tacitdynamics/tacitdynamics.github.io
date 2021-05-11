@@ -14,6 +14,11 @@ permalink: /foldersync/help/3.0.0/
 
 FolderSync is as the name suggest a folder syncing application. It is not a backup application, although it can be used as such. Its primary purpose is to sync folders between your devices and remote cloud provider or server.
 
+## Permissions
+For FolderSync to function correctly, it must have the required permissions granted to it. On the welcome wizard on first run of the app you should se a permissions screen with a overview of these permissions and how to grant them. The permissions screen can always be accessed directly from the about menu page (the about page is the right-most option on the bottom menu).
+
+There are different permissions needed, depending on Android OS version. Not all permissions are strictly needed, depending on your use case, but write access to internal storage and Manage all files permissions are required for a sync to run correctly.
+
 ## Add an account
 The first thing you probably want to do is to add an account to use for sync with cloud storage or a server. You will be required to provide your login credentials, either directly in FolderSync or on the provider webpage for those using OAuth authentication. If you do not already have an account you can create one at the applicable vendor website.
 

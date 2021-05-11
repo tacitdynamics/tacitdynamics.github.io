@@ -128,8 +128,8 @@ Create a database backup in the free version in the settings menu. Then fire up 
 When using external browser or custom Chrome tab to authenticate Google Drive or other OAuth supported cloud providers some can get stuck on the web page that gets redirected to. The cause of this is the app is not opened as it should when the https://www.tacit.dk/oauth-return url is loaded. To remedy this please ensure you are using Chrome as your default browser and it is the latest version. Also try to clear defaults for Chrome if still not working.
 
 ## File Manager
-### How can I access external SD card on Android 5.0 and newer?
-To make use of external SD card write access on Lollipop and later editions of Androids you have to give FolderSync (version 2.7.1 and later) the necessary permissions. You do this in filemanager using the External Storage permission option in left drawer menu (the shield icon). You will then have to select the SD card and press select "Allow access" or whatever the text is. Its important you select the root of the external SD card you want FolderSync to access or it won't work correctly. If you have selected a subfolder it may not work as expected. 
+### How can I access internal SD card, external SD card and USB OTG drive?
+To be able to access internal and external SD card, USB OTG and Android/data folder the the necessary permissions must be granted to the app. You do this on the permissions screen that can be opened on about page (right-most option in the bottom menu). It will display which permissions are required by the app and the status of these - and most importantly give you an option to grant the permissions, if they are missing. 
 
 Its also important to note, that if you change your SD card, you must regrant permissions for that SD card to FolderSync or the new SD card won't have write access. You must do this everytime you change SD card, no matter if a SD card has been previously granted permissions. If you decided FolderSync should no longer have write access to external SD card, you can revoke its permissions in settings.
 
