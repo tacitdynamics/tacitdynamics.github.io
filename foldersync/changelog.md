@@ -5,6 +5,10 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.46 (25-05-2021)
+* Minor bug fixes. 
+* Showing latest searches in file manager.
+
 ### Version 3.0.45 (11-05-2021)
 * Fix for uploading large files to Amazon S3.
 
