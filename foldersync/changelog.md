@@ -5,6 +5,9 @@ permalink: /foldersync/changelog/
 ---
 
 ## FolderSync Changelog
+### Version 3.0.47 (28-05-2021)
+* Fix crash when showing APK file in file manager.
+
 ### Version 3.0.46 (25-05-2021)
 * Minor bug fixes. 
 * Showing latest searches in file manager.
