@@ -63,6 +63,9 @@ Some servers has a very low request time out setting. If you are using Apache we
 ### OwnCloud connection issues
 May be caused by streamlining of the configuration into two account types for ownCloud 6/7 and 8 respectively. Please reconfigure your accounts accordingly. If you get something like "refused stream" error for HTTP/2 you need to upgrade to latest nginx web server and version 2.9.4, where this is fixed.
 
+### OwnCloud/Nextcloud 2FA support
+To login on server with 2FA enabled you need to generate App Password / Token for your user, this password can then be used in FolderSync to login.
+
 ## SFTP issues
 
 ### I can not login to my SFTP server
